@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Image Super Resolution UI</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../static/app/CSS/styles.css" />
+    <script src="../static/app/JS/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <p id="header-name">Image Super Resolution</p>
+      <p id="header-info">Expects low quality, low resolution JPEG/PNG images</p>
+    </header>
+    <main>
+      <div class="image-wrapper">
+        <div class="input-container">
+          <div class="container-info">
+            <img class="image-icon" src="../static/app/icons/image.svg" />
+            <div>Input</div>
+          </div>
+          <div for="image-upload" class="upload-image-area">
+            <input type="file" id="image-upload" accept="image/*" />
+            <div class="upload-text">Click to Upload Image</div>
+            <img class="image-icon" src="../static/app/icons/image.svg" />
+          </div>
+          <div class="upload-btn-container">
+            <div id="submit-btn">Submit</div>
+            <div class="clear-btn" onclick="clearImageArea()">Clear</div>
+          </div>
+        </div>
+        <div class="output-container">
+          <div class="container-info">
+            <img class="image-icon" src="../static/app/icons/image.svg" />
+            <div>Output</div>
+          </div>
+          <div class="output-image-area">
+            <img class="image-icon" src="../static/app/icons/image.svg" />
+          </div>
+
+          <div class="download-btn-container">
+            <a id="download-btn" onclick="downloadImage()">Download</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
