@@ -1,0 +1,197 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+}
+
+#header-name {
+  position: relative;
+  font-size: 25px;
+  margin-top: 0px;
+  text-align: center;
+  top: 20px;
+}
+
+#header-info {
+  position: relative;
+  font-size: 16px;
+  margin-top: 0px;
+  text-align: center;
+  top: 30px;
+  color: red;
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* height: 600px; */
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.input-container,
+.output-container {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 450px;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  flex-direction: column;
+}
+
+.container-info {
+  display: flex;
+  font-size: 14px;
+}
+
+.input-container .container-info,
+.output-container .container-info {
+  align-self: flex-start;
+  align-items: center;
+  margin: 2px 5px;
+  color: #888;
+  font-size: 14px;
+  gap: 4px;
+}
+
+.container-info img {
+  height: 20px;
+}
+
+.upload-image-area {
+  border: 2px dashed black;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 380px;
+  max-height: 350px;
+  position: relative;
+  flex-direction: column;
+}
+.upload-btn-container,
+.download-btn-container {
+  display: flex;
+  position: relative;
+  gap: 25px;
+  top: 8px;
+  width: 350px;
+  height: 30px;
+  font-size: 16px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-upload {
+  display: none;
+}
+
+#submit-btn {
+  position: relative;
+  width: 90px;
+  color: black;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: rgb(54, 97, 238);
+  opacity: 0.6;
+}
+
+.image-icon {
+  height: 30px;
+}
+
+#download-btn {
+  position: relative;
+  width: 90px;
+  color: black;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: rgb(223 158 74);
+  opacity: 0.6;
+}
+#download-btn:hover,
+#submit-btn:hover {
+  opacity: 1;
+}
+
+.upload-text {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  color: #888;
+  font-size: 24px;
+}
+
+.clear-btn {
+  position: relative;
+  width: 90px;
+  background-color: #abadaf;
+  border-radius: 5px;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.clear-btn:hover {
+  opacity: 1;
+}
+
+#output-container {
+  display: block;
+}
+
+.output-image-area {
+  border: 2px dashed black;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 380px;
+  max-height: 350px;
+  position: relative;
+  color: red;
+}
+
+#input-image {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#output-image {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
